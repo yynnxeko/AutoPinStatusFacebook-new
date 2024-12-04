@@ -233,15 +233,8 @@ namespace WinFormsApp1
                             chromeHepler.Delay(1, 5);
                             var pins = chromeHepler.chrome.FindElements(By.XPath("//span[text()='Pin to Featured']"));
                             foreach (var pin in pins)
-                            {
-                                try
-                                {
-                                    pin.Click();
-                                }
-                                catch (Exception ex)
-                                {
-                                    
-                                }
+                            {                               
+                                    pin.Click();                                                               
                             }
                             Thread.Sleep(delayInSecondsChangeLink * 1000);
                         }
